@@ -24,8 +24,6 @@ scrape_configs:
       - targets: ['demo.do.prometheus.io:9090']
 
   - job_name: 'railway_docs'
-    scheme: https
-    metrics_path: '/'
     static_configs:
     - targets: ['localhost:8000']
     
