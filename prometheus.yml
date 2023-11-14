@@ -27,7 +27,7 @@ scrape_configs:
     scheme: https
     metrics_path: '/'
     static_configs:
-    - targets: ['localhost:9090']
+    - targets: ['localhost:8000']
     
   # - job_name: 'postgres'
   #   scrape_interval: 5s
