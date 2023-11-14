@@ -27,7 +27,7 @@ scrape_configs:
     scheme: https
     metrics_path: '/'
     static_configs:
-    - targets: ['railway-docs-exporter-production.up.railway.app/']
+    - targets: ['localhost:9090']
     
   # - job_name: 'postgres'
   #   scrape_interval: 5s
