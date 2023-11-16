@@ -5,7 +5,7 @@ COPY prometheus.yml /etc/prometheus/prometheus.yml
 
 # expose the Prometheus server port
 EXPOSE 9090
-
+RUN chown 65534:65534 /prometheus
 # set the entrypoint command
 ENTRYPOINT [ "/bin/prometheus" ]
 CMD        [ "--config.file=/etc/prometheus/prometheus.yml", \
